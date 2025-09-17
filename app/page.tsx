@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, Linkedin, ExternalLink, Code, Database, Globe, Smartphone } from "lucide-react"
+import { Github, Linkedin, ExternalLink, Code, Database, Globe, Smartphone, Apple, Play } from "lucide-react"
 import { ScrollBackground } from "@/components/scroll-background"
 import { NorthernLights } from "@/components/northern-lights"
 
@@ -174,23 +174,50 @@ export default function Portfolio() {
                   <CardTitle className="flex items-center justify-between text-cream">
                     Tetdoku
                     <div className="flex gap-2">
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        className="h-8 w-8 hover:bg-amber/20 text-sand hover:text-amber"
+                      <a
+                        href="https://apps.apple.com/us/app/tetdoku/id6748969433"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="View on the App Store"
                       >
-                      </Button>
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        className="h-8 w-8 hover:bg-amber/20 text-sand hover:text-amber"
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          aria-label="App Store"
+                          className="group/appstore h-8 px-2 hover:bg-amber/20 text-sand hover:text-amber flex items-center gap-2"
+                        >
+                          <Apple className="w-4 h-4" />
+                          <span
+                            className="max-w-0 overflow-hidden opacity-0 transform transition-all duration-200 ease-out group-hover/appstore:max-w-[120px] group-hover/appstore:opacity-100 group-hover/appstore:ml-1"
+                          >
+                            App Store
+                          </span>
+                        </Button>
+                      </a>
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.nervoushippo.tetdoku&hl=en_US"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="View on Google Play"
                       >
-                        <ExternalLink className="w-4 h-4" />
-                      </Button>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          aria-label="Google Play"
+                          className="group/play h-8 px-2 hover:bg-amber/20 text-sand hover:text-amber flex items-center gap-2"
+                        >
+                          <Play className="w-4 h-4" />
+                          <span
+                            className="max-w-0 overflow-hidden opacity-0 transform transition-all duration-200 ease-out group-hover/play:max-w-[140px] group-hover/play:opacity-100 group-hover/play:ml-1"
+                          >
+                            Google Play
+                          </span>
+                        </Button>
+                      </a>
                     </div>
                   </CardTitle>
                   <CardDescription className="text-muted-foreground">
-                    Hybrid mobile game inspired by tetris and sudoku, with a few upgrades and personal styling.
+                    Hybrid mobile block puzzle game with power-ups, now available on the App Store and Google Play.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -380,7 +407,7 @@ export default function Portfolio() {
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Built custom websites and web applications for small businesses</li>
+                    <li>Built custom websites and web applications for small business</li>
                     <li>Making hybrid mobile games for myself and friends!</li>
                   </ul>
                 </CardContent>
@@ -397,7 +424,7 @@ export default function Portfolio() {
           {/* Footer content */}
           <div className="container mx-auto text-center relative z-10 flex items-end justify-center min-h-screen">
             <p className="text-sand drop-shadow-lg text-lg">
-              &copy; 2025 Kevin Lee. Built with these hands 👊🏻🤜🏻 and AI.
+              &copy; 2025 Nervous Hippo LLC.
             </p>
           </div>
         </footer>
