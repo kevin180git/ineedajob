@@ -296,7 +296,7 @@ export default function Portfolio() {
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                   <CardTitle className="flex items-center justify-between text-cream">
-                    Untitled cat game
+                    Multiplayer roguelike game
                     <div className="flex gap-2">
                       <Button
                         variant="ghost"
@@ -315,22 +315,19 @@ export default function Portfolio() {
                     </div>
                   </CardTitle>
                   <CardDescription className="text-muted-foreground">
-                    Personally hobby game project, modeled after my friends cats.
+                    Personally hobby game project, think megabonk x LoL Swarm.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline" className="border-amber/40 text-sand">
-                      Vue
+                      Unity
                     </Badge>
                     <Badge variant="outline" className="border-amber/40 text-sand">
-                      D3.js
+                      C#
                     </Badge>
                     <Badge variant="outline" className="border-amber/40 text-sand">
-                      Python
-                    </Badge>
-                    <Badge variant="outline" className="border-amber/40 text-sand">
-                      FastAPI
+                      Steamworks
                     </Badge>
                   </div>
                 </CardContent>
@@ -389,6 +386,10 @@ export default function Portfolio() {
                     <li>Developed cloud-native Java web services using Spring Boot as
                     well as iOS applications in Objective-C and Swift
                     </li>
+                    <li>
+                    Frontend Dev using Vue Framework, optimizing web performance
+                    with responsive image strategies, resulting in 60% faster load time.
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
@@ -408,7 +409,7 @@ export default function Portfolio() {
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                     <li>Built custom websites and web applications for small business</li>
-                    <li>Making hybrid mobile games for myself and friends!</li>
+                    <li>Created Tetdoku, a puzzle game with power-ups, available on the App Store and Google Play</li>
                   </ul>
                 </CardContent>
               </Card>
